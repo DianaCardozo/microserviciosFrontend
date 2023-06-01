@@ -1,5 +1,5 @@
 let modificarEstudiante = () => {}; 
-let eliminarEstudiante = () => {};
+let deleteEstudent = () => {};
 let mostrarEstudiante = () => {}; 
 let redirigirActividades = () => {}; 
 let datos = () => {};  
@@ -113,7 +113,7 @@ $(document).ready(function(){
     }    
 
 
-    eliminarEstudiante = function(Estudiantecodigo){
+    deleteEstudent = function(Estudiantecodigo){
         codigoEstudianteModificar = Estudiantecodigo
         $.ajax({
             url: 'http://localhost:8000/estudiantes/'+codigoEstudianteModificar,
